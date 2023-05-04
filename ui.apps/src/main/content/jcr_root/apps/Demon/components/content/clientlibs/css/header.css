@@ -1,0 +1,29 @@
+
+body{
+    margin: 0;
+}
+.page-header{
+    display:flex;
+    justify-content: space-between;
+    background-color: #90cff2;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.page-nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.page-nav li{
+    margin:0 20px;
+}
+
+.page-nav li a{
+    text-decoration:none;
+}
+
+.page-nav li a:hover{
+    text-decoration:underline;
+}

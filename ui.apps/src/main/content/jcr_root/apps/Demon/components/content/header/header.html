@@ -1,0 +1,16 @@
+<sly data-sly-use.headerObj=${'com.sutrix.demon.core.models.HeaderModel'}">
+<div class="page-header">
+<div class="page-logo">
+    <img src="${headerObj.getLogoImagePath}" alt="">
+</div>
+<div class="page-nav">
+    <ul>
+        <sly data-sly-list="${headerObj.getHeaderLinks}">
+            <li>
+                <a href="${item.linkPath}">${item.linkLabel}</a>
+            </li>
+        </sly>
+    </ul>
+</div>
+    </div>
+</sly>

@@ -1,0 +1,7 @@
+<header>this is navigation </header>
+<sly data-sly-use="com.sutrix.demon.core.models.Navigation">
+    ${item.name}
+    <sly data-sly-list.multi="${item.multifieldModel}">
+        ${multi.textField}
+    </sly>
+</sly>
