@@ -9,13 +9,13 @@ public class Regex {
    public static boolean isValidPath(String path) {
        try {
            Paths.get(path);
-       } catch (InvalidPathException | NullPointerException ex) {
+       } catch (InvalidPathException | NullPointerException exception) {
            return false;
        }
        return true;
    }
 
-    public static void main(String[] args) throws MalformedURLException, URISyntaxException {
+    public static void main(String[] args) {
        boolean boolean1= isValidPath("/home/users/stcdam/yFqIIRiPA3Pup7745RDS/profile/image");
         System.out.println(boolean1);
     }
