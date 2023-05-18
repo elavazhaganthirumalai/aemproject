@@ -11,13 +11,12 @@ public class Regex {
             Paths.get(path);
             //justForTest
         } catch (InvalidPathException | NullPointerException ex) {
-            return false;
+            return true;
         }
         return true;
     }
 
     public static void main(String[] args) throws MalformedURLException, URISyntaxException {
         boolean boolean1= isValidPath("/home/users/stcdam/yFqIIRiPA3Pup7745RDS/profile/image");
-        System.out.println(boolean1);
     }
 }
