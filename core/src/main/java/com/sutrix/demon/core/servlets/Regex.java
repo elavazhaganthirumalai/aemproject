@@ -9,6 +9,7 @@ public class Regex {
    public static boolean isValidPath(String path) {
        try {
            Paths.get(path);
+           //justForTest
        } catch (InvalidPathException | NullPointerException ex) {
            return false;
        }
